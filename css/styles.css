@@ -1,0 +1,46 @@
+/* колір кнопок/заголовків #212121 */
+/* колір логотип синій #2196F3 */
+/* колір тексту/посилань #757575 */
+/* колір адрес/герой #FFFFFF */
+/* кольорова гама футера background: #2F303A */
+/* кольорова гама листа #FFFFFF */
+/* колір посилань футер color: rgba(255, 255, 255, 0.6) */
+/* кольоровий фон наша команда background: #F5F4FA */
+/* фон героя background: #2F303A */
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+/* logo */
+.for-logo {
+  color: #2196f3;
+}
+.after-logo {
+  color: black;
+}
+.list {
+  list-style: none;
+}
+
+/* site-nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+/* Hero */
+.hero-title {
+  color: #ffffff;
+  background: #2f303a;
+}
+.hero {
+  background: #2f303a;
+}
+/* Section */
+.title,
+.title {
+  color: #212121;
+}
