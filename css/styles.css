@@ -9,24 +9,37 @@
 /* фон героя background: #2F303A */
 
 /* СТУДИЯ */
+:root {
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+}
 
 body {
   background-color: #ffffff;
   color: #757575;
-  font-family: roboto;
+  font-family: "roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 400;
 }
+/* .elementCursorPointer {
+    cursor: pointer;
+} */
+
 /* logo */
-.navigation .logo {
-  font-family: Raleway;
+.logo {
+  font-family: "Raleway", serif;
   font-style: 400;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-}
-.for-logo {
   color: #2196f3;
+  text-decoration: none;
 }
+/* .for-logo {
+  color: #2196f3;
+} */
 .after-logo {
   color: black;
 }
@@ -35,35 +48,39 @@ body {
 .auth-nav {
   list-style: none;
 }
+.header-list .link-current {
+  color: #2196f3;
+}
 
 /* site-nav */
 .header-list {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 .header-list .link {
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .header-list .link:hover,
 .header-list .link:focus {
   color: #2196f3;
 }
 .auth-nav {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: #2196f3;
+}
+
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 /* Hero */
@@ -73,21 +90,17 @@ body {
 .hero-title {
   color: #ffffff;
   background: #2f303a;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -96,37 +109,31 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Section Сильные стороны компании*/
-.feature-section h2 {
-  font-family: "Roboto";
-  font-style: normal;
+.feature-section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: white;
+  color: var(--primary-title-color);
 }
-.feature-section-title {
-  font-family: "Roboto";
-  font-style: normal;
+.feature-section-titles {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .feature-section-list {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
   list-style: none;
 }
 /* Профиль компании */
@@ -134,14 +141,12 @@ body {
   list-style: none;
 }
 .profile-section-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 /* Команда компании */
 .team-section {
@@ -151,63 +156,53 @@ body {
   list-style: none;
 }
 .team-section-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .member-section-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .team-section-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /* Футер */
 .footer {
   background: #2f303a;
 }
 .footer .for-logo {
-  font-family: "Raleway";
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 .footer .after-logo {
-  font-family: "Raleway";
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-address {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -215,23 +210,21 @@ body {
   list-style: none;
 }
 .footer-item {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.footer-link {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 /* ПОРТФОЛИО */
 
-.projects-section h1 {
-  font-family: "Roboto";
-  font-style: normal;
+.projects-section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: black;
@@ -240,38 +233,31 @@ body {
   list-style: none;
 }
 .projects-button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  cursor: pointer;
 }
-/* НЕ ПРАЦЮЄ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.projects-section-list .link:hover,
-.projects-section-list .link:focus {
-  color: #2196f3;
+.projects-button:hover,
+.projects-button:focus {
+  color: #ffffff;
+  background: #2196f3;
 }
 .projects-section-list-image {
   list-style: none;
 }
 .projects-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .projects-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
